@@ -1,6 +1,25 @@
 version: v1.0.0
 ignore:
+  # 1. CRITICAL: Database marsdb (tidak ada patch resmi)
   SNYK-JS-MARSDB-480405:
     - '*':
-        reason: 'Database bawaan latihan OWASP Juice Shop, tidak memiliki patch resmi dan hanya digunakan untuk lingkungan uji coba'
+        reason: 'Database bawaan OWASP Juice Shop lokal, tidak ada fix resmi dan hanya untuk riset/uji coba'
+        expires: 2026-12-31
+
+  # 2. LOW: Handlebars Information Exposure
+  SNYK-JS-HBS-1566555:
+    - '*':
+        reason: 'Hanya berdampak pada template rendering internal, tidak diekspos ke publik'
+        expires: 2026-12-31
+
+  # 3. MEDIUM: notevil Sandbox Bypass
+  SNYK-JS-NOTEVIL-2385946:
+    - '*':
+        reason: 'Digunakan khusus untuk sandbox latihan tantangan hacking Juice Shop'
+        expires: 2026-12-31
+
+  # 4. HIGH: basic-ftp ReDoS
+  SNYK-JS-BASICFTP-20419408:
+    - '*':
+        reason: 'FTP client hanya digunakan pada fitur dev-tools internal, dikategorikan sebagai accepted risk'
         expires: 2026-12-31
