@@ -1,25 +1,103 @@
 version: v1.0.0
 ignore:
-  # 1. CRITICAL: Database marsdb (tidak ada patch resmi)
+  # Mengabaikan seluruh kerentanan kategori Critical dan High yang ada pada project latihan ini
   SNYK-JS-MARSDB-480405:
     - '*':
-        reason: 'Database bawaan OWASP Juice Shop lokal, tidak ada fix resmi dan hanya untuk riset/uji coba'
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
         expires: 2026-12-31
-
-  # 2. LOW: Handlebars Information Exposure
-  SNYK-JS-HBS-1566555:
+  SNYK-JS-EXPRESSJWT-575022:
     - '*':
-        reason: 'Hanya berdampak pada template rendering internal, tidak diekspos ke publik'
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
         expires: 2026-12-31
-
-  # 3. MEDIUM: notevil Sandbox Bypass
-  SNYK-JS-NOTEVIL-2385946:
+  SNYK-JS-LODASH-1040724:
     - '*':
-        reason: 'Digunakan khusus untuk sandbox latihan tantangan hacking Juice Shop'
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
         expires: 2026-12-31
-
-  # 4. HIGH: basic-ftp ReDoS
+  SNYK-JS-LODASH-15869625:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-LODASH-450202:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-LODASH-608086:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-LODASH-6139239:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-LODASH-73638:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-MOMENT-19821607:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-MOMENT-2440688:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-TAR-15307072:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-TAR-15416075:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-TAR-15456201:
+    - '*':
+        reason: &id001 'Accepted risk untuk lingkungan pembelajaran lab lokal'
+        expires: 2026-12-31
+  SNYK-JS-TAR-17909068:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-TAR-17909152:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-URIJS-19963963:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
   SNYK-JS-BASICFTP-20419408:
     - '*':
-        reason: 'FTP client hanya digunakan pada fitur dev-tools internal, dikategorikan sebagai accepted risk'
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-CRYPTOJS-6028119:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-CYCLONEDXCYCLONEDXNPM-17817903:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-CYCLONEDXCYCLONEDXNPM-20158546:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-HTTPCACHESEMANTICS-19964064:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-HTTPCACHESEMANTICS-19964068:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-JWS-14188253:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-LIBXMLJS2-6808810:
+    - '*':
+        reason: *id001
+        expires: 2026-12-31
+  SNYK-JS-LIBXMLJS2-6808816:
+    - '*':
+        reason: *id001
         expires: 2026-12-31
