@@ -101,3 +101,16 @@ ignore:
     - '*':
         reason: *id001
         expires: 2026-12-31
+
+  npm:base64url:20180511:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan lab'
+        expires: 2026-12-31
+  npm:jsonwebtoken:20150331:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan lab'
+        expires: 2026-12-31
+  npm:jws:20160726:
+    - '*':
+        reason: 'Accepted risk untuk lingkungan lab'
+        expires: 2026-12-31
