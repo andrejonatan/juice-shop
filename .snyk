@@ -1,0 +1,6 @@
+version: v1.0.0
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: 'Database bawaan latihan OWASP Juice Shop, tidak memiliki patch resmi dan hanya digunakan untuk lingkungan uji coba'
+        expires: 2026-12-31
